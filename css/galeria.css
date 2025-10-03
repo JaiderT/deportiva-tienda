@@ -2,11 +2,12 @@
 
 body {
     width: 100vw;
-    background-color: beige;  
+    background-color: #67b1ea;  
 }
 .con-header {
-    background: yellow;
+    background: linear-gradient(90deg, #2A5298, #000000);
     position: fixed;
+    border-bottom: 1px solid #e0e0e0;
     width: 155%;
     height: 65px;
     top: 0;
@@ -43,7 +44,7 @@ body {
     padding: 0;
     display: flex;
     margin-right: 150px;
-    color: black;
+    color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: none;
     font-size: 20px;
@@ -62,7 +63,7 @@ body {
     padding: 90px 0;
     color: black;
     margin: 30px 0;
-    border-bottom: 3px solid yellow;
+    border-bottom: 3px solid #2A5298;
     padding-bottom: 40px;
     margin: 0 auto;
     width: 150px;
