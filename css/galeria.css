@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Miniver&display=swap');
 
 body {
-    background-color: beige;
-    min-height: 100vh;     
+    width: 100vw;
+    background-color: beige;  
 }
 .con-header {
     background: yellow;
@@ -14,7 +14,7 @@ body {
     z-index: 99;
 }
 .con-header header {
-    max-width: 1100px;
+    max-width: 1400px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -34,7 +34,7 @@ body {
     display: flex;
     list-style: none;
     right: 0;
-    padding: 10px;
+    padding: 5px;
 
 }
 .con-header header ul li a{
@@ -55,15 +55,7 @@ body {
     border-radius: 500px;
     padding: 4px 4px;
 }
-.galeria {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    padding: 40px 0;
-    margin: 10px 600px;
-}
+
 .galeria h2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 4cap;
@@ -75,17 +67,36 @@ body {
     margin: 0 auto;
     width: 150px;
 }
-.contenedor-imagenes img {
+.galeria .contenedor-imagenes .galeria-item{
+    width: 390px;
+    height: 390px;
+    align-items: center;
+    text-align: center;
+    margin: 0px 50px;
+    
+
+}
+.galeria{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+}
+.galeria .contenedor-imagenes .galeria-item img {
     width: 350px;
     border-radius: 100px;
     height: 260px;
     padding: 20px;
     transition: transform 0.3s ease;
     cursor: pointer;
+    
 }
-.contenedor-imagenes {
-    padding: 30px;
+.galeria .contenedor-imagenes {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 40px;
 }
-.contenedor-imagenes img:hover {
+.galeria .contenedor-imagenes img:hover {
     transform: scale(1.05);
 }
